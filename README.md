@@ -1,9 +1,17 @@
 ## 说明
 
-shed.cpp是一个调度器解决方案，整体采用了EDF（ddl最短优先）。对应于schedule lab。
+### 1. schedlab
 
-mm.c是一个内存分配解决方案，实现了malloc，free和realloc。对应于malloc lab。
+进程调度实验，要求给出特定情景下的任务调度决策，在规定的时间内完成尽可能多的任务。实现代码shed.cpp整体采用了EDF（ddl最短优先），实验报告中有更加详细的阐述。
 
-fsh.c 是一个小型的shell实现，可以完成常见的shell命令，对应于shelllab
+### 2. malloclab
 
-fs.c实现了一个FUSE，一个基于用户态的文件系统，可以完成基本的文件管理和读写命令，对应于filesystemlab。
+内存分配实验，代码放在mm.c，实现了malloc，free和realloc，最终分数94。
+
+### 3 shelllab
+
+shell模拟实验，fsh.c 是一个小型的shell实现，可以完成常见的shell命令，（这个实验尤其要注意下输出的格式，格式要求比较严格）
+
+### 4.fslab
+
+文件系统实验，fs.c实现了一个FUSE，一个基于用户态的文件系统，可以完成基本的文件管理和读写命令。
